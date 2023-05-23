@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <metca charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador y Desencriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="EncriptadorStyle.css">  
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body onload="focusOnInput()">
+        <div id="particles-js"></div>
+
+        <header>
+                <img class="logo" src="Elementos extra/Logologo.png" alt="logo de alura">
+        </header>
+
+        <main>
+            <textarea class="textoIngresado" placeholder="Ingrese el texto aqui" style="border:none" id="texto"></textarea>
+
+            <div id="cont1" class="rectangulo">
+                <textarea class="textoMostrado" placeholder="" style="border:none" id="textoMostrado"></textarea>
+                <img class="muneco" src="Elementos extra/pngwing.com.png" alt="muneco mirando a traves de una lupa" id="muneco">
+                <p id="parrafo1">Ningun mensaje fue encontrado</p>
+                <p id="parrafo2">Ingresa el texto que desees encriptar o desencriptar</p>
+                <input type="button" value="Copiar" class="boton3" onclick="copiado()" id="boton">
+            </div>
+
+        </main>
+        
+        <footer>
+            <div class="instrucciones">
+                <span id="boot-icon" class="bi bi-exclamation-circle-fill" style="font-size: 12px; color: rgb(84, 84, 84);"></span>
+                <p class="parrafo">Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <input type="button" value="Encriptar" class="boton1" onclick="mostrarTexto()">
+                <input type="button" value="Desencriptar" class="boton2" onclick="mostrarTexto1()">
+            </div>
+            <div class="infoPersonal">
+                <p class="infoFinal">&#9927; Creado por: Anderson Briceño</p>
+                <p class="infoFinal">&#128231; Correo: abriceno221@gmail.com</p>
+            </div>    
+        </footer>
+    </body>
+
+</html>
+
+
+<script src="particles.min.js"></script>
+<script src="app.js"></script>
+<script src="main.js"></script>
+
+
+
+

@@ -1,0 +1,510 @@
+body{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #000;
+}
+
+#particles-js{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.logo{
+    margin: 40px 0 0 40px; 
+    display: inline-block;
+}
+
+.textoIngresado{
+    position: absolute;
+    top: 168px;
+    left: 240px;
+    width: 680px;
+    height: 600px;
+    outline: none;
+    resize: none;
+    font-weight: 400;
+    font-size: 32px;
+    font-style: normal;
+    color: #FFFFFF;
+    background: transparent;
+}
+
+::placeholder{
+    color: #FFFFFF;
+}
+
+.textoIngresado::-webkit-scrollbar{
+    width: 7px;
+}
+
+.textoIngresado::-webkit-scrollbar-thumb{
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.rectangulo{
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    top: 40px;
+    right: 40px;
+    border-radius: 32px;
+    padding: 32px 32px 131px 32px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    box-sizing: border-box;
+    background: #1f1e1e;
+    color: #FFFFFF;
+    border: 2px solid #0A3871;
+}
+
+.textoMostrado{
+    position: relative;
+    display: block;
+    width: 336px;
+    height: 800px;
+    padding: 0;
+    outline: none;
+    resize: none;
+    font-weight: 400;
+    font-size: 32px;
+    font-style: normal;
+    color: #FFFFFF;
+    background: transparent;
+}
+
+.textoMostrado::-webkit-scrollbar{
+    width: 7px;
+}
+
+.textoMostrado::-webkit-scrollbar-thumb{
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+
+.muneco{
+    position: absolute;
+    width: 336px;
+    height: 304px;
+    left: 32px;
+    top: 243px;
+}
+
+.rectangulo p:nth-child(3){
+    position: absolute;
+    width: 336px;
+    height: 58px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    left: 32px;
+    bottom: 307px;
+    margin: 32px 0 16px 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+}
+
+.rectangulo p:nth-child(4){
+    position: absolute;
+    width: 336px;
+    height: 48px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    left: 32px;
+    bottom: 243px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+}
+
+.boton3{
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    right: 32px;
+    bottom: 32px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    background-color: #FFFFFF;
+    transition: 0.7s all;
+    cursor: pointer;
+    display: none;
+    font-weight: 400;
+    font-size: 22px;
+    font-style: normal;
+    text-align: center;
+}
+
+.boton3:hover{
+    transform: scale(1.1);
+}
+
+.instrucciones{
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    top: 851px;
+    left: 240px;
+}
+
+.parrafo{
+    font-family: "inter";
+    font-style: normal;
+    display: inline;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.botones{
+    position: absolute;
+    left: 240px;
+    top: 885px;
+    width: 680px;
+    height: 67px;
+}
+
+.boton1{
+    position: absolute;
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    border-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    transition: 1s all;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 22px;
+    font-style: normal;
+    text-align: center;
+}
+
+.boton1:hover{
+    transform: scale(1.1);
+}
+
+.boton2{
+    position: absolute;
+    width: 328px;
+    height: 67px;
+    left: 352px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #0A3871;
+    transition: 1s all;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 22px;
+    font-style: normal;
+    text-align: center;
+}
+
+.boton2:hover{
+    background: #F3F5FC;
+    transform: scale(1.1);
+}
+
+
+.infoPersonal{
+    position: absolute;
+    left: 240px;
+    top: 960px;
+}
+
+.infoFinal{
+    font-family: "inter";
+    font-style: normal;
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 200%;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin: 0;
+}
+
+
+@media (max-width:768px){
+    body{
+        position: relative;
+        width: 768px;
+        height: 626px;
+    }
+
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .logo{
+        margin: 73.42px; 
+        width: 30%;
+    }
+    
+    .textoIngresado{
+        position: absolute;
+        top: 240px;
+        left: 40px;
+        width: 688px;
+        height: 288px;
+    }
+
+    .rectangulo{
+        position: absolute;
+        width: 688px;
+        height: 400px;
+        top: 755px;
+        right: 40px;
+        padding: 32px;
+        box-sizing: border-box;
+    }
+
+    .textoMostrado{
+        width: 624px;
+        max-height: 250px;
+        margin: 0 0 32px 0;
+    }
+    
+    .muneco{
+        top: 5px;
+        left: 180px;
+    }
+    
+    .rectangulo p:nth-child(3){
+        position: absolute;
+        width: 624px;
+        height: 29px;
+        left: 32px;
+        bottom: 72px;
+    }
+    
+    .rectangulo p:nth-child(4){
+        position: absolute;
+        width: 624px;
+        height: 24px;
+        left: 32px;
+        bottom: 32px;
+    }
+    
+    .boton3{
+        position: absolute;
+        width: 624px;
+        height: 67px;
+        padding: 24px;
+        box-sizing: border-box;
+        margin: 32px 0 0 0;
+        transition: none;
+        cursor: none;
+        left: 32px;
+        bottom: 32px;
+        display: none;
+    }
+
+    .boton3:hover{
+        transform: none;
+    }
+
+    .instrucciones{
+        position: absolute;
+        width: 229px;
+        height: 18px;
+        top: 620px;  
+        left: 40px;
+    }
+    
+    .botones{
+        position: absolute;
+        left: 40px;
+        top: 654px;
+        width: 688px;
+        height: 67px;
+    }
+    
+    .boton1{
+        position: absolute;
+        width: 332px;
+        height: 67px;
+        transition: none;
+        cursor: none;
+    }
+
+    .boton1:hover{
+        transform: none;
+    }
+    
+    .boton2{
+        position: absolute;
+        width: 332px;
+        height: 67px;
+        left: 356px;
+        transition: none;
+        cursor: none;
+    }
+
+    .boton2:hover{
+        transform: none;
+    }
+    
+    
+    .infoPersonal{
+        position: relative;
+        left: 40px;
+        top: 945px;
+        display: block;
+    }
+}
+
+@media (max-width:375px){
+    body{
+        position: relative;
+        width: 374px;
+        height: 933px;
+    }
+
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .logo{
+        margin: 24px; 
+        width: 50%;
+    }
+    
+    .textoIngresado{
+        position: absolute;
+        top: 152px;
+        left: 16px;
+        width: 343px;
+        height: 285px;
+    }
+
+    .rectangulo{
+        position: absolute;
+        width: 327px;
+        height: 349px;
+        top: 680px;
+        left: 24px;
+    }
+
+    .textoMostrado{
+        width: 263px;
+        height: 220px;
+        margin: 0 0 32px 0;
+    }
+    
+    .muneco{
+        display: none;
+    }
+    
+    .rectangulo p:nth-child(3){
+        position: absolute;
+        width: 263px;
+        height: 58px;
+        left: 32px;
+        bottom: 180px;
+    }
+    
+    .rectangulo p:nth-child(4){
+        position: absolute;
+        width: 263px;
+        height: 48px;
+        left: 32px;
+        bottom: 100px;
+    }
+    
+    .boton3{
+        position: absolute;
+        width: 279px;
+        height: 67px;
+        left: 25px;
+        bottom: 15px;
+        transition: none;
+        cursor: none;
+    }
+
+    .boton3:hover{
+        transform: none;
+    }
+
+    .instrucciones{
+        top: 451px;
+        left: 16px;
+    }
+    
+    .botones{
+        position: absolute;
+        display: block;
+        left: 16px;
+        top: 485px;
+        width: 343px;
+        height: 158px;
+    }
+    
+    .boton1{
+        position: absolute;
+        width: 343px;
+        height: 67px;
+        transition: none;
+        cursor: none;
+    }
+
+    .boton1:hover{
+        transform: none;
+    }
+    
+    .boton2{
+        position: absolute;
+        width: 343px;
+        height: 67px;
+        top: 91px;
+        left: auto;
+        transition: none;
+        cursor: none;
+    }
+
+    .boton2:hover{
+        transform: none;
+    }
+
+    .infoPersonal{
+        text-align: center;
+        width: 100%;
+        left: 0;
+    }
+    
+    
+    .infoPersonal{
+        position: absolute;
+        top: 1063px;
+    }
+
+}
